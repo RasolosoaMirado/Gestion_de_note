@@ -1,0 +1,136 @@
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Fond général */
+body {
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Conteneur principal */
+.dashboard_page {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Titres */
+h1 {
+    font-size: 32px;
+    color: #0b4b20;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* Formulaires */
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"], 
+input[type="date"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Boutons */
+button {
+    width: auto;
+    padding: 10px 20px;
+    background-color: #0b4b20;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Listes matières et étudiants */
+ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+ul li {
+    background-color: #e9e9e9;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #0b4b20;
+    color: white;
+}
+
+td input[type="number"] {
+    width: 60px;
+}
+
+/* Lien voir les étudiants */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #0b4b20;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Déconnexion bouton */
+.dashboard_page button:last-of-type {
+    background-color: #b30b0b;
+}
+
+.dashboard_page button:last-of-type:hover {
+    background-color: #d10000;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tableau de bord</title>
+    <link rel="stylesheet" href="./css/dashboard.css">
+</head>
+<body>
+    <div class="dashboard_page">
+        <h1>Tableau de bord - Professeur</h1>
+        <p>Bienvenue!</p>
+    
+        <!-- Ajouter une matière -->
+        <h2>Ajouter une matière</h2>
+        <form id="addMatiereForm">
+            <label for="nomMatiere">Nom de la matière :</label>
+            <input type="text" id="nomMatiere" name="nomMatiere" required>
+            <input type="number" id="coefficientMatiere" placeholder="Coefficient" required min="1">
+            <button type="submit">Ajouter</button>
+        </form>
+    
+        <h2>Liste des matières</h2>
+        <ul id="matieresList"></ul>
+    
+        <!-- Ajouter un étudiant -->
+        <h2>Ajouter un étudiant</h2>
+        <form id="addEtudiantForm">
+            <label for="nomEtudiant">Nom :</label>
+            <input type="text" id="nomEtudiant" name="nomEtudiant" required>
+            <label for="prenomEtudiant">Prénom :</label>
+            <input type="text" id="prenomEtudiant" name="prenomEtudiant" required>
+            <label for="dateNaissance">Date de naissance :</label>
+            <input type="date" id="dateNaissance" name="dateNaissance" required>
+            <label for="sexe">Sexe :</label>
+            <select id="sexe" name="sexe" required>
+            <option value="MASC">Masculin</option>
+            <option value="FEM">Féminin</option>
+            </select>
+            <button type="submit">Ajouter</button>
+        </form>
+    
+        <h2>Liste des étudiants</h2>
+        <ul id="etudiantsList"></ul>
+    
+        <h2>Notes des étudiants</h2>
+        <table id="notesTable">
+            <thead><tr id="headerRow"></tr></thead>
+            <tbody id="bodyRows"></tbody>
+        </table>
+    
+        <button id="calculateBtn">Calculer</button><br><br>
+    
+        <h2>Moyennes des étudiants</h2>
+        <table id="moyennesTable">
+            <thead>
+            <tr><th>Étudiant</th><th>Moyenne</th></tr>
+            </thead>
+            <tbody id="moyennesBody"></tbody>
+        </table>
+    
+        <a href="./students.html">Voir les étudiants</a>
+        <button onclick="logout()">Déconnexion</button>
+        </div>
+    
+
+    <script src="../public/js/dashboard.js"></script>
+</body>
+
+</html>

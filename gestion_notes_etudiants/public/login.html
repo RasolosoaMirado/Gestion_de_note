@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="login_page">
+        <h1 class="connexion">Connexion</h1>
+        <form id="loginForm">
+            <label for="role">Type d'utilisateur :</label>
+            <select id="role" name="role">
+                <option value="etudiant">Étudiant</option>
+                <option value="professeur">Professeur</option>
+            </select><br>
+            
+            <label for="username">Nom d'utilisateur :</label>
+            <input type="text" id="username" name="username" required><br>
+            
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" required><br>
+            
+            <label for="remember">Se souvenir de moi</label>
+            <input type="checkbox" id="remember"><br>
+            
+            <button type="submit">Se connecter</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Empêche le rechargement de la page
+            
+            const role = document.getElementById('role').value;
+
+            // Redirection selon le type d'utilisateur
+            if (role === "professeur") {
+                window.location.href = './dashboard.html';
+            } else {
+                window.location.href = './releve_de_note.html';
+            }
+        });
+    </script>
+</body>
+</html>
+
