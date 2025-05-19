@@ -1,14 +1,14 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Connexion</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="login_page">
-        <h1 class="connexion">Connexion</h1>
-        <form id="loginForm">
+    <div class="signup_page">
+        <h1 class="inscription">Inscription</h1>
+        <form id="signupForm">
             <label for="role">Type d'utilisateur :</label>
             <select id="role" name="role">
                 <option value="etudiant">Étudiant</option>
@@ -21,15 +21,10 @@
             <label for="password">Mot de passe :</label>
             <input type="password" id="password" name="password" required><br>
             
-            <label for="remember">Se souvenir de moi</label>
-            <input type="checkbox" id="remember"><br>
-            
-            <button type="submit">Se connecter</button>
+            <button type="submit">S'inscrire</button>
         </form>
-        <p>Pas de compte ? <a href="./signup.html">S'inscrire</a></p>
     </div>
 
-    <script src="./js/login.js"></script>
+    <script src="./js/signup.js"></script>
 </body>
 </html>
-
